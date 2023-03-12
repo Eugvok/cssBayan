@@ -85,6 +85,26 @@ body {
 	margin: 0 auto;
 }
 
+@media (max-width: 767px) {
+	body {
+		font-size: calc(16px + 17 * ((100vw - 320px) / 1440));
+	}
+
+	h1 {
+		font-size: calc(22px + 17 * ((100vw - 320px) / 1440));
+	}
+}
+
+@media (min-width: 766.98px) {
+	body {
+		font-size: calc(16px + 10 * (100vw / 1440));
+	}
+
+	h1 {
+		font-size: calc(22px + 10 * (100vw / 1440));
+	}
+}
+
 .bayan-bunner {
 	margin: 0px 10px;
 	padding: 0px 10px;
@@ -159,4 +179,10 @@ input[type=radio] {
 
 .bayan__container input[type=radio]:checked+label::after {
 	transform: rotate(45deg);
+}
+
+@media (max-width: 819.98px) {
+	.bayan-bunner .bayan__container {
+		max-width: 700px;
+	}
 }
